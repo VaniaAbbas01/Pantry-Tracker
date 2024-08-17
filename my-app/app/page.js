@@ -69,6 +69,7 @@ export default function Home() {
     flexDirection="column"
     justifyContent="center"
     alignItems="center"
+    bgcolor="#000"
     gap={2}>
 
     <Modal
@@ -113,15 +114,15 @@ export default function Home() {
     }>
       Add New Item
     </Button>
-    <Box border="1px solid #000">
+    <Box border="2px solid #39FF14">
       <Box
         width="800px"
         height="100px"
-        bgcolor="#ADD8E6"
+        bgcolor="#39FF14"
         display="flex"
         alignItems="center"
         justifyContent="center">
-        <Typography variant="h2" color="#333">
+        <Typography variant="h2" color="#000">
           Inventory Items
         </Typography>
       </Box>
@@ -136,8 +137,8 @@ export default function Home() {
               justifyContent="space-between"
               bgColor="#f0f0f0"
               padding={5}>
-              <Typography variant="h3" color="#333" textAlign="center">{name.charAt(0).toUpperCase() + name.slice(1)}</Typography>
-              <Typography variant="h3" color="#333" textAlign="center">{quantity}</Typography>
+              <Typography variant="h3" color="#fff" textAlign="center">{name.charAt(0).toUpperCase() + name.slice(1)}</Typography>
+              <Typography variant="h3" color="#fff" textAlign="center">{quantity}</Typography>
               <Stack direction='row' spacing={2}>
                 <Button variant="contained" onClick={() => {
                   addItem(name)
